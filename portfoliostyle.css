@@ -1,5 +1,5 @@
 * {
-    margin: 0px;
+    margin: 0;
 }
 
 html {
@@ -11,9 +11,7 @@ body {
 }
 
 .nav_bar {
-    border: 2px solid #faf9f6;
     background: #faf9f6;
-    height: 20px;
     padding: 15px;
     margin: 40px 20px 10px 20px;
     border-radius: 20px;
@@ -61,29 +59,6 @@ p span {
     scroll-margin-top: 110px;
 }
 
-.text_and_btn {
-    display: flex;
-    flex-direction: column;
-    line-height: 1.5;
-    margin-top: 50px;
-    font-size: 44px;
-}
-
-.text_and_btn a {
-    background: #faf9f6;
-    text-decoration: none;
-    list-style-type: none;
-    text-align: center;
-    padding: 10px;
-    border-radius: 10px;
-    color: #e31919;
-}
-
-.text_and_btn a:hover {
-    background: #e31919;
-    color: black;
-}
-
 .home img {
     border-radius: 10px;
     width: 500px;
@@ -91,5 +66,26 @@ p span {
     margin: 80px 70px 80px 100px;
 }
 
+.text_and_btn {
+    display: flex;
+    flex-direction: column;
+    line-height: 1.3;
+    margin-top: 76px;
+    font-size: 44px;
+}
 
+.text_and_btn a {
+    background: #faf9f6;
+    text-decoration: none;
+    text-align: center;
+    padding: 10px;
+    border-radius: 10px;
+    color: #e31919;
+    margin-top: 10px;
+}
+
+.text_and_btn a:hover {
+    background: #e31919;
+    color: black;
+}
 
