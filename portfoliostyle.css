@@ -111,10 +111,18 @@ p span {
 }
 
 .about p {
-    position: relative;
     font-family: Arial;
-    font-size: 20px;
+    font-size: 25px;
+}
+
+.first_part {
+    position: relative;
     margin-top: 10rem;
+    margin-left: 5rem;
+}
+
+.second_part {
+    margin-top: 1rem;
     margin-left: 5rem;
 }
 
