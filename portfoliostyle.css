@@ -10,6 +10,8 @@ body {
     background: #010013;
 }
 
+/* ── Navbar ────────────────────────────────── */
+
 .nav_bar {
     background: #faf9f6;
     padding: 15px;
@@ -20,10 +22,6 @@ body {
     top: 40px;
 }
 
-ul li a:hover {
-    color: #e31919;
-}
-
 ul {
     display: flex;
     justify-content: space-evenly;
@@ -31,13 +29,19 @@ ul {
     gap: 1rem;
 }
 
-ul li a{
+ul li a {
     text-decoration: none;
     color: black;
     padding: 5px;
     font-size: 22px;
     word-spacing: 2px;
 }
+
+ul li a:hover {
+    color: #e31919;
+}
+
+/* ── Global ────────────────────────────────── */
 
 p {
     color: #faf9f6;
@@ -47,9 +51,7 @@ p span {
     color: #e31919;
 }
 
-.intro {
-    font-size: 65px;
-}
+/* ── Hero ──────────────────────────────────── */
 
 .home {
     display: flex;
@@ -64,6 +66,10 @@ p span {
     width: 500px;
     height: 350px;
     margin: 80px 70px 80px 100px;
+}
+
+.intro {
+    font-size: 65px;
 }
 
 .text_and_btn {
@@ -89,3 +95,36 @@ p span {
     color: black;
 }
 
+/* ── About ─────────────────────────────────── */
+
+.about {
+    display: flex;
+    flex-direction: row;
+}
+
+.about img {
+    border-radius: 10px;
+    width: 600px;
+    height: 500px;
+    margin: 10px;
+    margin: 7.3rem 5rem 5rem 5rem;
+}
+
+.about p {
+    position: relative;
+    font-family: Arial;
+    font-size: 20px;
+    margin-top: 10rem;
+    margin-left: 5rem;
+}
+
+.about_text {
+    display: flex;
+    flex-direction: column;
+}
+
+/* ── Skills ────────────────────────────────── */
+
+/* ── Projects ──────────────────────────────── */
+
+/* ── Contact ───────────────────────────────── */
