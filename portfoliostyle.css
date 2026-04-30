@@ -31,7 +31,7 @@ ul {
 
 ul li a {
     text-decoration: none;
-    color: black;
+    color: #010013;
     padding: 5px;
     font-size: 22px;
     word-spacing: 2px;
@@ -42,10 +42,6 @@ ul li a:hover {
 }
 
 /* ── Global ────────────────────────────────── */
-
-p {
-    color: #faf9f6;
-}
 
 p span {
     color: #e31919;
@@ -59,6 +55,7 @@ p span {
     font-family: Arial;
     margin-bottom: 50px;
     scroll-margin-top: 110px;
+    color: #faf9f6;
 }
 
 .home img {
@@ -92,7 +89,7 @@ p span {
 
 .text_and_btn a:hover {
     background: #e31919;
-    color: black;
+    color: #010013;
 }
 
 /* ── About ─────────────────────────────────── */
@@ -100,14 +97,14 @@ p span {
 .about {
     display: flex;
     flex-direction: row;
+    color: #faf9f6;
 }
 
 .about img {
     border-radius: 10px;
     width: 600px;
     height: 500px;
-    margin: 10px;
-    margin: 7.3rem 5rem 5rem 5rem;
+    margin: 7.5rem 5rem 5rem 5rem;
 }
 
 .about p {
@@ -140,6 +137,9 @@ p span {
     margin-right: 10px;
     margin-left: 10px;
     justify-content: space-evenly;
+    font-family: Arial;
+    margin-bottom: 1rem;
+    color: #faf9f6;
 }
 
 
@@ -147,7 +147,8 @@ p span {
     display: flex;
     flex-direction: column;
     text-align: center;
-    margin-top: 10rem;
+    margin-top: 16rem;
+    margin-bottom: 10rem;
     align-items: center;
 }
 
@@ -161,6 +162,65 @@ p span {
     justify-content: space-evenly;
 }
 /* ── Projects ──────────────────────────────── */
+
+.projects {
+    color: #010013;
+    font-family: Arial;
+    font-size: 20px;
+    margin-left: 6.5rem;
+    margin-top: 7rem;
+}
+
+.projcard {
+    display: flex;
+    flex-direction: column;
+    background: #faf9f6;
+    padding: 1rem;
+    color: #010013;
+    border-radius: 10px;
+    justify-content: space-evenly;
+    height: 10rem;
+    width: 30rem;
+    margin: 1rem;
+}
+
+.existing_proj {
+    display: flex;
+    flex-direction: row;
+    margin: 1rem;
+}
+
+.empty_proj {
+    margin: 1rem;
+    display: flex;
+    flex-direction: row;
+}
+
+.projects a {
+    background: #010013;
+    border-radius: 10px;
+    text-decoration: none;
+    color: #faf9f6;
+    padding: 5px; 
+    text-align: center;
+    width: 10rem;
+    margin-left: auto;
+}
+
+.proj_name {
+    font-size: 30px;
+    color: #e31919;
+}
+
+.proj_lang {
+    font-size: 25px;
+}
+
+.proj_top {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
 
 /* ── Contact ───────────────────────────────── */
 
