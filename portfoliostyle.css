@@ -20,6 +20,7 @@ body {
     font-family: Arial;
     position: sticky;
     top: 40px;
+    z-index: 1000;
 }
 
 ul {
@@ -228,6 +229,8 @@ p span {
     margin: 10rem;
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
+    scroll-margin-top: 140px;
 }
 
 .contact_box {
@@ -238,6 +241,8 @@ p span {
     border-radius: 10px;
     position: relative;
     gap: 1rem;
+    align-items: center;
+    text-align: center;
 }
 
 .contact p {
@@ -249,7 +254,7 @@ p span {
 .contact a {
     background: #e31919;
     padding: 0.5rem;
-    font-size: 20px;
+    font-size: 30px;
     color: white;
     text-decoration: none;
     border-radius: 10px;
@@ -267,4 +272,24 @@ p span {
 .other_cred {
     display: flex;
     flex-direction: column;
+    color: white;
+    font-size: 20px;
+    margin-top: 7rem;
+}
+
+.other_cred p {
+    text-align: left;
+    margin-bottom: 1rem;
+}
+
+.other_cred a {
+    text-align: center;
+}
+
+.cred_box {
+    background: white;
+    padding: 10px;
+    color: black;
+    border-radius: 10px;
+    margin-bottom: 2rem;
 }
