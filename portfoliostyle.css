@@ -226,8 +226,45 @@ p span {
 
 .contact {
     margin: 10rem;
+    display: flex;
+    flex-direction: row;
 }
+
+.contact_box {
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    background: #faf9f6;
+    border-radius: 10px;
+    position: relative;
+    gap: 1rem;
+}
+
+.contact p {
+    font-family: Arial;
+    font-size: 20px;
+    text-align: center;
+}
+
+.contact a {
+    background: #e31919;
+    padding: 0.5rem;
+    font-size: 20px;
+    color: white;
+    text-decoration: none;
+    border-radius: 10px;
+    height: 3rem;
+    width: 20rem;
+    justify-content: center;
+}
+
 .contact img {
-    width: 10px;
-    height: 10px;
+    width: 450px;
+    height: 300px;
+    border-radius: 10px;
+}
+
+.other_cred {
+    display: flex;
+    flex-direction: column;
 }
