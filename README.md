@@ -1,20 +1,17 @@
-# My Portfolio
+# Portfolio - Astrid Rosal
 
-A simple and clean portfolio that includes information about myself and my attributes.
+A responsive personal portfolio website built with HTML and CSS.
 
-## Features
-- HTML Structure and Syntax
-- CSS Styles and Properties
-- Hero Section
-- About Section
-- Skills Section
-- Project Section
-- Contact Section
+## Tech Stack
+- HTML
+- CSS
 
-## What I Achieved
-- I'm comfortable with all the syntax in HTML
-- I have learned how to properly assign selectors and properties in CSS
-- I'm knowledgeable on how to structuralized and stylized a website.
+## Sections
+- Hero, About, Skills, Projects, Contact
+
+## How to Run
+- Clone this repository
+- Open 'portfolioindex.html' in your browser
 
 ## Preview
 ![Home Section](Home_Section.jpg)
