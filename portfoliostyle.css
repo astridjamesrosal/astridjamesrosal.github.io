@@ -255,12 +255,15 @@ p span {
     background: #e31919;
     padding: 0.5rem;
     font-size: 30px;
-    color: white;
+    color: #faf9f6;
     text-decoration: none;
     border-radius: 10px;
     height: 3rem;
     width: 20rem;
+    display: flex;
     justify-content: center;
+    align-items: center;
+    margin: 0 auto;
 }
 
 .contact img {
@@ -272,7 +275,7 @@ p span {
 .other_cred {
     display: flex;
     flex-direction: column;
-    color: white;
+    color: #faf9f6;
     font-size: 20px;
     margin-top: 7rem;
 }
@@ -286,10 +289,14 @@ p span {
     text-align: center;
 }
 
-.cred_box {
-    background: white;
+.other_cred .cred_box {
+    background: #e31919;
     padding: 10px;
-    color: black;
+    color: #faf9f6;
     border-radius: 10px;
+    display: flex;           
+    align-items: center;     
+    justify-content: center; 
+    text-align: center;
     margin-bottom: 2rem;
 }
