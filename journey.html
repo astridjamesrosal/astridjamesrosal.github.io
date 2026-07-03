@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pre-College Progress</title>
+    <link rel="stylesheet" href="portfoliostyle.css">
+</head>
+<body>
+        <div class="nav_bar">
+            <nav>
+                <ul>
+                <li><a href="#Journey" class="nav-link active">Journey</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="journey_page" id="Journey">
+            <div class="journey_card">
+                <div class="journey_title">Expense Tracker</div>
+                <div class="journey_description">Before college started, I created a roadmap that contains the necessary projects that I could accomplish and practice on to learn relevant IT fields and topics. I started with an Expense Tracker for managing expenses, we could add, view, remove, view the total, and view by category. I learned functions, loops, conditionals, data structures, input validation, and json file persistence.</div>
+            </div>
+            <div class="journey_card">
+                <div class="journey_title">Quiz App</div>
+                <div class="journey_description">After that, I created a Quiz App, which asks the user 10 questions about Information Technology, saves the score, and compares it to the previous score. Through this project, I was introduced to using a saved state from a previous, disconnected attempt of the quiz, which uses load_score() that reads the file written earlier from the last attempt to compare it to the current score from the latest attempt. It is loaded fresh on every call, and the comparison between scores determines the output message.</div>
+            </div>
+            <div class="journey_card">
+                <div class="journey_title">Movie CLI</div>
+                <div class="journey_description">Continuing with the Four Python Object Oriented Programming Projects: I started small first, the Movie Command Line Interface App, where can add and view movies. It only deals with one class that manages its own attributes.</div>
+            </div>
+            <div class="journey_card">
+                <div class="journey_title">Bank System</div>
+                <div class="journey_description">Heading next to the Bank System, this project handles multiple classes now which are Transaction, Account, and Bank. These classes depend on values from one another to complete an action. For example, Bank.deposit() calls get_account first before proceeding with said action, and then the action method constructs a Transaction that contains all the details that happened. It is a collaboration instead of just the classess coexisting.</div>
+            </div>
+            <div class="journey_card">
+                <div class="journey_title">Student System</div>
+                <div class="journey_description">Next, is the Student System, this project introduced me how to guard data validity, it uses the student.__init__ to check the validity of the inputted data and raises errors on malformed fields. Also, StudentRegistry.add checks for the uniqueness of a student, if they already exist, its not valid, but if not, it allows the creation of one. Persistence is also demonstrated here via FileManager for it saves all the data of the students, their name, ID number, year level, and grade.</div>
+            </div>
+            <div class="journey_card">
+                <div class="journey_title">Library System</div>
+                <div class="journey_description">For the last project in Python OOP, the Library system introduces status transition validation before saving so it only executes on real change. We first check if the book is_available is True, and depending on the method if it is borrow or return, it would change the status of the book of is_available to False, making users that try to borrow it would be unsuccessful if the book is already borrowed. Then if the action is return, and the status of the book is Is_available is False, after the method, it would now be set to True, and then it would be saved. Therefore, when a user tried to borrow the book, it would now be allowed.</div>
+            </div>
+            <div class="journey_card">
+                <div class="journey_title">DSA and SQL</div>
+                <div class="journey_description">Between the OOP Projects Batch and Flask, I worked through DSA Fundamentals covering Big O Notations, Arrays, Recursion, Sorting Algorithms, Stacks/Queues, and Linked Lists. After that, I studied SQL, which includes JOINs, Schema Design, Core CRUD Operations, and SQLite3. I studied them through drills and practice codes. And then I also tackled a small Flask exercise covering routes and form handling before applying them directly to Pando and Orchid's schema design, routings, and query logic.</div>
+            </div>
+            <div class="journey_card">
+                <div class="journey_title">Pando - Study Session Tracker</div>
+                <div class="journey_description">After the four Object Oriented Programing Projects, we move on to Flask. In the first project, Pando, A Study Session Tracker, I was introduced to how Flask communicates with webpages through routes like `add_session_route` and `delete_session_route`, which call into database functions such as `add_session` and `delete_session`, but no edit routes at all, so once a session is created, you simply can view or delete it. I also learned Jinja syntax which taught me how to be efficient with rendering conditionals and loops in templates. Input validation lives entirely in the Flask route, not the database and the schema itself has no constraints such as no NOT NULL. And lastly, Sessions is a single table with no foreign keys which means there is no other entity for it to relate to.</div>
+            </div>
+            <div class="journey_card">
+                <div class="journey_title">Orchid - Finance Tracker</div>
+                <div class="journey_description">And finally, the last project before college, Orchid, a Finance Tracker, builds on top of app-level routing by introducing relational data with foreign keys and JOINs. Because Transactions reference Accounts and Categories, hard-deleting either would break linked transactions which is why Accounts and Categories use soft delete instead. For transactions, once deleted, it is hard-deleted and it leaves no audit trail. NOT NULL constraints also enforce that every field has input, a requirement Pando's schema never had. Unlike Pando, Orchid has editability for Accounts, Categories, and Transactions which would be very useful for users if they ever make a valid input that is factually wrong. Through this feature, users can correct a mistaken entry rather than deleting and creating one again. JOINs connects the three tables, Accounts, Categories, and Transactions for functions like get_all_transactions because it needs the data from those three tables to produce the complete details of a transaction. </div>
+            </div>
+            <div class="journey_card">
+                <div class="journey_title">Git Fundamentals</div>
+                <div class="journey_description">After the Flask apps, I studied Git, which is the standard way developers collaborate on shared projects. I practiced feature branching by adding a category color picker to Orchid, and initially made the mistake of committing directly to main before learning to branch first. It was a correction I had to apply twice before I got comfortable with it. Once I had the branch workflow down, I added a fallback value for categories created before the color picker feature was added, and then went through the full cycle: git push, open pull request, review and compare, merge, and then pull.</div>
+            </div>
+            <div class="journey_card">
+                <div class="journey_title">JavaScript Practice</div>
+                <div class="journey_description">To close out the pre-college roadmap, I spent time on JavaScript fundamentals (const/let, block scope, traditional vs arrow syntax, and loops.) I caught a logical error in a block scope snippet where a const condition would always evaluate to true. From there, I learned arrays and objects next, which included map, filter, and forEach. Then, DOM manipulation and data fetching, which covered event selection, event listeners, and fetch. I learned all of these through conceptual practice, snippets per topic, but no standalone project yet.</div>
+            </div>
+        </div>
+</body>
+</html>
