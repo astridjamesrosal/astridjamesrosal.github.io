@@ -10,123 +10,90 @@
         <div class="nav_bar">
             <nav>
                 <ul>
-                <li><a href="#Home" class="nav-link active">Home</a></li>
-                <li><a href="#About" class="nav-link">About</a></li>
-                <li><a href="#Skills" class="nav-link">Skills</a></li>
+                <li><a href="#About" class="nav-link active">Home</a></li>
                 <li><a href="#Projects" class="nav-link">Projects</a></li>
-                <li><a href="#Contact" class="nav-link">Contact</a></li>
                 </ul>
             </nav>
         </div>
 
-    <section class="home" id="Home">
-        <img src="My_Picture.jpg" alt="My_Picture">
-
-        <div class="text_and_btn">
-            <p class="intro">Hi, I'm <span>Astrid</span></p>
-            <p>Astrid James Natividad Rosal</p>
-            <p>Incoming BSIT Student</p>
-            <p>Jose Rizal University</p>
-            <a href="#Projects">View My Work</a>
-        </div>
-    </section>
-
     <section class="about" id="About">
-        <div class="about_text">
-            <p class="first_part">I'm Astrid Rosal, an incoming BSIT student in the Philippines. And I'm currently advance 
-            studying IT. I'll be honest — I initially chose IT for practical reasons. 
-            It was more affordable than my original path, and the career prospects were strong. 
-            But somewhere along the way, as I started building things and writing code, something shifted.
-            I started seeing what I was actually capable of creating, and that changed everything. 
-            Now I'm not just studying IT — I'm genuinely excited about it.</p>
-
-            <p class="second_part">I'm currently building projects in Python, including a CLI expense tracker and a quiz app. 
-            My current interest lies in Networking and Cloud, but before ultimately deciding what path 
-            I would take, I'm exploring all of it first myself. I am also a certified freeCodeCamp 
-            Responsive Web Design developer.</p>
+        <div class="about_left_side">
+            <img src="My_Picture.jpg">
+            <p class="about_student">Information Technology Student</p>
+            <p class="about_school">Jose Rizal University</p>
+            <a href="about_certificate.png">Responsive Web Design Certificate</a>
+            <a href="#Projects">See my work</a>
         </div>
-        <img src="My_Picture_2.jpg" alt="My_Picture_2">
-    </section>
-
-    <section class="skills" id="Skills">
-        <div>
-        <img src="html-5.png" alt="html pic">
-        <p>HTML</p>
-        </div>
-        <div>
-        <img src="css-3.png" alt="css pic">
-        <p>CSS</p>
-        </div>
-        <div>
-        <img src="Python Logo.png" alt="python pic">
-        <p>PYTHON</p>
-        </div>
-        <div>
-        <img src="github-sign.png" alt="github pic">
-        <p>GITHUB</p>
-        </div>
-        <div>
-        <img src="social.png" alt="git pic">
-        <p>GIT</p>
+        <div class="about_right_side">
+            <p class="about_name">Astrid James N. Rosal</p>
+            <p class="about_contact">astridjamesrosal95@gmail.com</p>
+            <p class="about_contact">https://github.com/astridjamesrosal</p>
+            <p class="about_description">I started my journey by teaching myself Python, OOP, SQL, and Flask, 
+                building a sequence of projects from a CLI Expense Tracker up through two Flask Apps. 
+                I care about understanding how something works, not just what it does. 
+                <a href="build_log.html">See what each project taught the next one -></a></p>
         </div>
     </section>
 
     <section class="projects" id="Projects">
-        <div class="existing_proj">
-            <div class="projcard">
-                <div class="proj_top">
-                    <p class="proj_name">Expense Tracker</p>
-                    <p class="proj_lang">Python</p>
+        <div class="project_container">
+            <div class="project_title">Orchid - Personal Finance Tracker</div>
+            <a href="">View on GitHub</a>
+            <div class="project_description">A personal finance tracker for logging and reviewing income/expenses across multiple accounts and categories.</div>
+            <div class="project_content_left">
+                <div class="project_design">
+                    <p class="design_decision">Design Decision</p>
+                    <p class="design_points">Uses soft-delete instead of removing rows because transactions reference accounts and categories through foreign keys and deleting either would break historical records.</p>
+                    <p class="design_points">Added editability across accounts, categories, and transactions in order for users to correct an entry that was valid but factually wrong.</p>
+                    <p class="design_points">Implemented JOINs across the three tables for functions that need the data from all of them at once such as get_all_transactions</p>
                 </div>
-                <p>A command-line expense tracker built in Python. 
-                Manages expenses with persistent JSON storage, category filtering, and input validation.</p>
-                <a href="https://github.com/astridjamesrosal/expense-tracker" target="_blank">View on GitHub</a>
+                <div class="project_limitation">
+                    <p class="limitation_header">Limitation</p>
+                    <p class="limitation_point">Transactions are hard-deleted, leaving no audit trails and no records of the original entry, unlike accounts and categories whose records are preserved.</p>
+                </div>
             </div>
-
-            <div class="projcard">
-                <div class="proj_top">
-                    <p class="proj_name">Quiz App</p>
-                    <p class="proj_lang">Python</p>
+            <div class="project_content_right">
+                <img src="">
+                <p class="technology_used">Technology Used</p>
+                <div class="technology_points_container">
+                    <p class="technology_points">Python</p>
+                    <p class="technology_points">Flask</p>
+                    <p class="technology_points">SQlite3</p>
+                    <p class="technology_points">Jinja2</p>
+                    <p class="technology_points">HTML</p>
+                    <p class="technology_points">CSS</p>
+                    <p class="technology_points">Javascript</p>
                 </div>
-                <p>A command-line quiz app built in Python featuring multiple-choice questions, 
-                score tracking with JSON persistence, and session-to-session score comparison.</p>
-                <a href="https://github.com/astridjamesrosal/quiz-app" target="_blank">View on GitHub</a>
             </div>
         </div>
-        <div class="empty_proj">
-            <div class="projcard">
-                <div class="proj_top">
-                    <p class="proj_name">Project Title</p>
-                    <p class="proj_lang">Language Used</p>
-                </div>
-                <p>Description</p>
-                <a>View on GitHub</a>
-            </div>
 
-            <div class="projcard">
-                <div class="proj_top">
-                    <p class="proj_name">Project Title</p>
-                    <p class="proj_lang">Language Used</p>
+        <div class="project_container">
+            <div class="project_title">Pando - Personal Study Tracker</div>
+            <a href="">View on GitHub</a>
+            <div class="project_description">A personal study tracker that lets you add a study session view it through the main dashboard with complete details.</div>
+            <div class="project_content_left">
+                <div class="project_design">
+                    <p class="design_decision">Design Decision</p>
+                    <p class="design_points"> Sessions can be created and deleted, but cannot be edited. Once logged, a session is treated as a fixed record which a user could only view and delete.</p>
                 </div>
-                <p>Description</p>
-                <a>View on GitHub</a>
+                <div class="project_limitation">
+                    <p class="limitation_header">Limitation</p>
+                    <p class="limitation_point">Pando uses a single table (Sessions) design with no foreign keys or schema level constraints therefore there's nothing else for it to relate to.</p>
+                </div>
+            </div>
+            <div class="project_content_right">
+                <img src="">
+                <p class="technology_used">Technology Used</p>
+                <div class="technology_points_container">
+                    <p class="technology_points">Python</p>
+                    <p class="technology_points">Flask</p>
+                    <p class="technology_points">SQlite3</p>
+                    <p class="technology_points">Jinja2</p>
+                    <p class="technology_points">HTML</p>
+                    <p class="technology_points">CSS</p>
+                </div>
             </div>
         </div>
     </section>
-
-    <section class="contact" id="Contact">
-        <div class="contact_box">
-            <img src="My_Picture.jpg" alt="My_Picture">
-            <p>Astrid James N. Rosal</p>
-            <a href="https://github.com/astridjamesrosal" target="_blank">Get In Touch</a>
-        </div>
-        <div class="other_cred">
-            <p>Email Address: </p>
-            <div class="cred_box">astridjamesrosal95@gmail.com</div>
-            <p>GitHub Profile: </p>
-            <a class="cred_box" href="https://github.com/astridjamesrosal" target="_blank">Click Here</a>
-        </div>
-    </section>
-
 </body>
 </html>
