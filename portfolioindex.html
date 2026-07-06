@@ -10,90 +10,130 @@
         <div class="nav_bar">
             <nav>
                 <ul>
-                <li><a href="#About" class="nav-link active">Home</a></li>
-                <li><a href="#Projects" class="nav-link">Projects</a></li>
+                <li><a href="#About">About</a></li>
+                <li><a href="#Projects">Projects</a></li>
                 </ul>
             </nav>
         </div>
 
     <section class="about" id="About">
         <div class="about_left_side">
-            <img src="My_Picture.jpg">
+            <img src="static/portfolio_picture.jpg" class="about_picture" alt="portfolio_picture">
             <p class="about_student">Information Technology Student</p>
-            <p class="about_school">Jose Rizal University</p>
-            <a href="about_certificate.png">Responsive Web Design Certificate</a>
-            <a href="#Projects">See my work</a>
+            <p class="about_school">José Rizal University</p>
+            <a class="about_certificate" href="#cert-modal">Responsive Web Design Certificate</a>
+            <a class="about_action" href="#Projects">See my work</a>
         </div>
         <div class="about_right_side">
             <p class="about_name">Astrid James N. Rosal</p>
-            <p class="about_contact">astridjamesrosal95@gmail.com</p>
-            <p class="about_contact">https://github.com/astridjamesrosal</p>
+            <div class="about_contact_section">
+                <a class="about_contact" href="mailto:astridjamesrosal95@gmail.com">astridjamesrosal95@gmail.com</a>
+                <p class="about_divide">|</p>
+                <a class="about_contact" href="https://github.com/astridjamesrosal" target="_blank" rel="noopener noreferrer">https://github.com/astridjamesrosal</a>
+            </div>
             <p class="about_description">I started my journey by teaching myself Python, OOP, SQL, and Flask, 
                 building a sequence of projects from a CLI Expense Tracker up through two Flask Apps. 
                 I care about understanding how something works, not just what it does. 
-                <a href="build_log.html">See what each project taught the next one -></a></p>
+                <a href="journey.html">See what each project taught the next one -></a></p>
         </div>
     </section>
 
     <section class="projects" id="Projects">
         <div class="project_container">
-            <div class="project_title">Orchid - Personal Finance Tracker</div>
-            <a href="">View on GitHub</a>
-            <div class="project_description">A personal finance tracker for logging and reviewing income/expenses across multiple accounts and categories.</div>
-            <div class="project_content_left">
-                <div class="project_design">
-                    <p class="design_decision">Design Decision</p>
-                    <p class="design_points">Uses soft-delete instead of removing rows because transactions reference accounts and categories through foreign keys and deleting either would break historical records.</p>
-                    <p class="design_points">Added editability across accounts, categories, and transactions in order for users to correct an entry that was valid but factually wrong.</p>
-                    <p class="design_points">Implemented JOINs across the three tables for functions that need the data from all of them at once such as get_all_transactions</p>
+            <header class="project_header">
+                <div class="project_title_contents">
+                    <img src="static/orchid_logo.jpg" class="project_logo">
+                    <h3 class="project_title">Orchid - Personal Finance Tracker</h3>
                 </div>
-                <div class="project_limitation">
-                    <p class="limitation_header">Limitation</p>
-                    <p class="limitation_point">Transactions are hard-deleted, leaving no audit trails and no records of the original entry, unlike accounts and categories whose records are preserved.</p>
+                <a href="https://github.com/astridjamesrosal/flask-phase/tree/main/project6_finance_tracker" target="_blank" rel="noopener noreferrer" class="github_btn">
+                    View in GitHub
+                </a>
+            </header>
+            <p class="project_description">
+                A personal finance tracker for logging and reviewing income/expenses across multiple accounts and categories.</p>
+            <div class="project_main_body">
+                <div class="project_main_left">
+                    <div class="project_design">
+                        <h4 class="design_decision_title">Design Decision</h4>
+                        <p class="design_points">Uses soft-delete instead of removing rows because transactions reference accounts and categories through foreign keys and deleting either would break historical records.</p>
+                        <p class="design_points">Added editability across accounts, categories, and transactions in order for users to correct an entry that was valid but factually wrong.</p>
+                        <p class="design_points">Implemented JOINs across the three tables for functions that need the data from all of them at once such as get_all_transactions</p>
+                    </div>
+                    <div class="project_limitation">
+                        <h4 class="limitation_header">Limitation</h4>
+                        <p class="limitation_points">Transactions are hard-deleted, leaving no audit trails and no records of the original entry, unlike accounts and categories whose records are preserved.</p>
+                    </div>
                 </div>
-            </div>
-            <div class="project_content_right">
-                <img src="">
-                <p class="technology_used">Technology Used</p>
-                <div class="technology_points_container">
-                    <p class="technology_points">Python</p>
-                    <p class="technology_points">Flask</p>
-                    <p class="technology_points">SQlite3</p>
-                    <p class="technology_points">Jinja2</p>
-                    <p class="technology_points">HTML</p>
-                    <p class="technology_points">CSS</p>
-                    <p class="technology_points">Javascript</p>
-                </div>
-            </div>
-        </div>
-
-        <div class="project_container">
-            <div class="project_title">Pando - Personal Study Tracker</div>
-            <a href="">View on GitHub</a>
-            <div class="project_description">A personal study tracker that lets you add a study session view it through the main dashboard with complete details.</div>
-            <div class="project_content_left">
-                <div class="project_design">
-                    <p class="design_decision">Design Decision</p>
-                    <p class="design_points"> Sessions can be created and deleted, but cannot be edited. Once logged, a session is treated as a fixed record which a user could only view and delete.</p>
-                </div>
-                <div class="project_limitation">
-                    <p class="limitation_header">Limitation</p>
-                    <p class="limitation_point">Pando uses a single table (Sessions) design with no foreign keys or schema level constraints therefore there's nothing else for it to relate to.</p>
-                </div>
-            </div>
-            <div class="project_content_right">
-                <img src="">
-                <p class="technology_used">Technology Used</p>
-                <div class="technology_points_container">
-                    <p class="technology_points">Python</p>
-                    <p class="technology_points">Flask</p>
-                    <p class="technology_points">SQlite3</p>
-                    <p class="technology_points">Jinja2</p>
-                    <p class="technology_points">HTML</p>
-                    <p class="technology_points">CSS</p>
+                <div class="project_main_right">
+                    <div class="project_image">
+                        <img src="/static/Populated_Main_page.jpg" alt="Orchid Dashboard Mockup" class="project_screenshot">
+                    </div> 
+                    <div class="technology_used_contents">
+                        <h4 class="technology_used_title">Technology Used</h4>
+                        <ul class="technology_used_container">
+                            <li class="technology_used">Python</li>
+                            <li class="technology_used">Flask</li>
+                            <li class="technology_used">SQLite3</li>
+                            <li class="technology_used">Jinja2</li>
+                            <li class="technology_used">HTML</li>
+                            <li class="technology_used">CSS</li>
+                            <li class="technology_used">JavaScript</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
+
+    <section class="projects" id="Projects">
+        <div class="project_container">
+            <header class="project_header">
+                <div class="project_title_contents">
+                    <h3 class="project_title">Pando - Personal Study Tracker</h3>
+                </div>
+                <a href="https://github.com/astridjamesrosal/flask-phase/tree/main/project5_study_tracker" target="_blank" rel="noopener noreferrer" class="github_btn">
+                    View in GitHub
+                </a>
+            </header>
+            <p class="project_description">
+                A personal study tracker that lets you add a study session view it through the main dashboard with complete details.</p>
+            <div class="project_main_body">
+                <div class="project_main_left">
+                    <div class="project_design">
+                        <h4 class="design_decision_title">Design Decision</h4>
+                        <p class="design_points">Sessions can be created and deleted, but cannot be edited. Once logged, a session is treated as a fixed record which a user could only view and delete.</p>
+                    </div>
+                    <div class="project_limitation">
+                        <h4 class="limitation_header">Limitation</h4>
+                        <p class="limitation_points">Pando uses a single table (Sessions) design with no foreign keys or schema level constraints therefore there's nothing else for it to relate to.</p>
+                    </div>
+                </div>
+                <div class="project_main_right">
+                    <div class="project_image">
+                        <img src="/static/Pando_Main-Hub.jpg" alt="Orchid Dashboard Mockup" class="project_screenshot">
+                    </div> 
+                    <div class="technology_used_contents">
+                        <h4 class="technology_used_title">Technology Used</h4>
+                        <ul class="technology_used_container">
+                            <li class="technology_used">Python</li>
+                            <li class="technology_used">Flask</li>
+                            <li class="technology_used">SQLite3</li>
+                            <li class="technology_used">Jinja2</li>
+                            <li class="technology_used">HTML</li>
+                            <li class="technology_used">CSS</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <dialog id="cert-modal" class="modal_overlay">
+        <div class="modal_content">
+            <a href="#About" class="modal_close">x</a>
+            <img src="/static/Certificate.jpg" alt="Responsive Web Design Certificate" class="modal_image">
+        </div>
+    </dialog>
+
 </body>
 </html>
