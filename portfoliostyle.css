@@ -66,7 +66,7 @@ ul li a {
 
 ul li a:hover {
     background-color: var(--dark-blue);
-    color: var(--white-font)
+    color: var(--white-font);
 }
 
 /* Certificate Modal */
@@ -117,11 +117,11 @@ ul li a:hover {
 /* About Section */
 
 #About {
-    scroll-margin-top: 8rem;
+    scroll-margin-top: 12rem;
     display: flex;
     align-items: center;      
     justify-content: center;       
-    margin: 4rem auto;  
+    margin: 8rem auto 8rem auto;  
     padding: 0 2rem;
     gap: 5rem;            
 }
@@ -141,7 +141,6 @@ ul li a:hover {
     object-fit: cover;
     border: 3px solid var(--yellow-color); 
     margin-bottom: 1rem;
-
 }
 
 .about_student {
@@ -391,4 +390,170 @@ ul li a:hover {
     padding: 0.5rem 1.5rem;
     border-radius: 35rem; 
     white-space: nowrap;
+}
+
+/* Responsive Design for smaller screens */
+
+@media screen and (max-width: 968px) {
+
+    body {
+        overflow-x: hidden; 
+    }
+
+    .nav_bar {
+        width: 90%;
+        max-width: 400px;
+        padding: 0.5rem 1rem;
+        top: 1rem;
+    }
+
+    .nav_bar ul {
+        justify-content: center;
+        gap: 1.5rem;
+    }
+
+    #About {
+        display: flex;
+        flex-direction: column; 
+        align-items: center;
+        text-align: center;
+        margin: 2rem 0;
+        padding: 0 1rem;
+        gap: 2rem;
+    }
+
+    .about_left_side, 
+    .about_right_side {
+        width: 100%;
+        max-width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .about_picture {
+        width: 100%;
+        max-width: 240px; 
+        height: auto;
+    }
+
+    .about_certificate,
+    .about_action {
+        width: 100%;
+        max-width: 320px; 
+        text-align: center;
+        margin-inline: auto;
+    }
+
+    .about_contact_section {
+        flex-direction: column;
+        gap: 0.75rem;
+        width: 100%;
+        margin-bottom: 1.5rem;
+    }
+
+    .about_divide {
+        display: none; 
+    }
+
+    .about_description {
+        text-align: justify; 
+        font-size: 1.1rem;
+        line-height: 1.6;
+        padding: 0;
+        max-width: 100%; 
+    }
+
+    .projects {
+        padding: 2rem 1rem;
+    }
+
+    .project_container {
+        margin: 2rem 0;
+        padding: 1.5rem 1rem;
+        margin-bottom: 4rem;
+        margin-top: -2rem;
+    }
+
+    .project_header {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 1.5rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .project_title_contents {
+        flex-direction: column; 
+        align-items: center;
+        gap: 0.5rem;
+    }
+
+    .project_logo {
+        width: 50px;
+        height: 50px;
+    }
+
+    .project_title {
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+    .github_btn {
+        width: auto;
+        padding: 0.6rem 2rem;
+    }
+
+    .project_description {
+        text-align: center;
+        font-size: 1.05rem;
+        margin-bottom: 2rem;
+    }
+
+    .project_main_body {
+        flex-direction: column;
+        gap: 2.5rem;
+    }
+
+    .project_main_left,
+    .project_main_right {
+        width: 100%;
+    }
+
+    .project_design {
+        padding: 1.5rem 1.25rem;
+        border-radius: 1.5rem;
+    }
+
+    .design_decision_title,
+    .limitation_header,
+    .technology_used_title {
+        text-align: center;
+        font-size: 1.4rem;
+    }
+
+    .design_points,
+    .limitation_points {
+        font-size: 1rem;
+        line-height: 1.5;
+        text-align: left;
+    }
+
+    .technology_used_container {
+        justify-content: center; 
+        padding-left: 0;
+        gap: 0.5rem;
+    }
+
+    .technology_used {
+        font-size: 0.85rem;
+        padding: 0.4rem 1.2rem;
+    }
+}
+
+@media screen and (min-width: 969px) and (max-height: 720px) {
+    #About {
+        margin: 5rem auto 8rem auto; 
+    }
 }
