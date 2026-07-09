@@ -2,6 +2,9 @@
 
 My personal developer portfolio that documents my path from a self-directed roadmap to two Flask applications, built before starting my BSIT program.
 
+## Live Site
+[Visit my Portfolio](https://astridjamesrosal.github.io)
+
 ## Tech Stack
 - HTML
 - CSS
@@ -12,8 +15,8 @@ My personal developer portfolio that documents my path from a self-directed road
 - **Journey** - Highlights of the technical progression I have executed before College
 
 ## How to Run
-- Clone this repository
-- Open 'portfolioindex.html' in your browser
+1. Clone this repository to your local machine.
+2. Open `index.html` in any web browser.
 
 ## Preview
 ![About Section](static/portfolio_main_page.jpg)
