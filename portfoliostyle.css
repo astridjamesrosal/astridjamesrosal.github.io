@@ -4,18 +4,8 @@
     --light-yellow: #eecd60;
     --light-blue: #dce6eb;
     --white-font: #fafafa;
-
-    --log-1: #7FA8C9;
-    --log-2: #6FA0C9;
-    --log-3: #5C9BD1;
-    --log-4: #4A93D1;
-    --log-5: #3D93DB;
-    --log-6: #2E93E0;
-    --log-7: #4DB8F0;
-    --log-8: #FFCC33;
-    --log-9: #FFD966;
-    --log-10: #6FC7B0;
-    --log-11: #3FA98C;
+    --navbar-color: linear-gradient(to right, #FFD700, #FF9800);
+    --journey-bg: linear-gradient(to right, #dce6eb, #92a8e1); 
 }
 
 * {
@@ -35,7 +25,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: linear-gradient(to right, #FFD700, #FF9800);
+    background: var(--navbar-color);
     border-radius: 35rem;
     padding: 0.75rem 2rem;
     position: sticky;
@@ -80,7 +70,6 @@ ul li a:hover {
     height: 100vh;
     background-color: rgba(11, 29, 58, 0.85); 
     z-index: 1000;
-    border: none;
     justify-content: center;
     align-items: center;
 }
@@ -177,7 +166,7 @@ ul li a:hover {
 
 .about_action:hover {
     transform: scale(1.05);
-    background: linear-gradient(to right, #FFD700, #FF9800);
+    background: var(--navbar-color);
 }
 
 .about_right_side {
@@ -289,7 +278,7 @@ ul li a:hover {
 
 .github_btn:hover {
     transform: scale(1.05);
-    background: linear-gradient(to right, #FFD700, #FF9800);
+    background: var(--navbar-color);
 }
 
 .project_description {
@@ -413,7 +402,6 @@ ul li a:hover {
     }
 
     #About {
-        display: flex;
         flex-direction: column; 
         align-items: center;
         text-align: center;
@@ -555,5 +543,203 @@ ul li a:hover {
 @media screen and (min-width: 969px) and (max-height: 720px) {
     #About {
         margin: 5rem auto 8rem auto; 
+    }
+}
+
+/* Journey Section */
+
+#Journey {
+    scroll-margin-top: 4rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5rem;
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 5rem 2rem;
+}
+
+.journey_card {
+    background-image: var(--journey-bg);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    position: relative; 
+    color: var(--dark-blue);
+    padding: 1.5rem;
+    border-radius: 1.5rem;
+}
+
+.journey_title {
+    font-weight: 800;
+    font-size: 1.4rem;
+}
+
+.journey_title a {
+    text-decoration: none;
+    color: var(--dark-blue);
+}
+
+.journey_title a:hover {
+    text-decoration: underline;
+}
+
+.journey_description {
+    font-size: 1rem;
+    line-height: 1.2;
+    margin-top: 0.5rem;
+}
+
+.journey_card::after {
+    position: absolute;
+    font-size: 2rem;
+    font-weight: 800;
+    color: var(--yellow-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    pointer-events: none;
+}
+
+.journey_card.one::after,
+.journey_card.two::after,
+.journey_card.four::after,
+.journey_card.five::after,
+.journey_card.seven::after,
+.journey_card.eight::after,
+.journey_card.ten::after {
+    content: "->";
+    top: 50%;
+    right: -3.8rem;
+    transform: translateY(-50%);
+}
+
+.journey_footer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 0 2rem 0;
+}
+
+.return_btn {
+    background-color: var(--yellow-color);
+    color: var(--dark-blue);
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 1.1rem;
+    padding: 0.8rem 2.2rem;
+    border-radius: 0.75rem;
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    transition: transform 0.2s ease;
+}
+
+.return_btn:hover {
+    background-image: var(--navbar-color);
+    transform: scale(1.05);
+}
+
+/* Responsive Design for Journey Section */
+
+@media screen and (max-width: 1024px) {
+    #Journey {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 5.5rem 4.5rem;
+        padding: 4rem 1.5rem;
+    }
+
+    .journey_card.one::after,
+    .journey_card.two::after,
+    .journey_card.three::after,
+    .journey_card.four::after,
+    .journey_card.five::after,
+    .journey_card.six::after,
+    .journey_card.seven::after,
+    .journey_card.eight::after,
+    .journey_card.nine::after,
+    .journey_card.ten::after {
+        content: none;
+        top: auto;
+        right: auto;
+        left: auto;
+        bottom: auto;
+        transform: none;
+    }
+
+    .journey_card.one::after,
+    .journey_card.three::after,
+    .journey_card.five::after,
+    .journey_card.seven::after,
+    .journey_card.nine::after {
+        content: "->";
+        top: 50%;
+        right: -3.2rem; 
+        transform: translateY(-50%);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #Journey {
+        grid-template-columns: 1fr; 
+        gap: 4.5rem 0; 
+        padding: 3rem 1rem;
+        box-sizing: border-box;
+    }
+
+    .journey_card {
+        padding: 1.25rem;
+        border-radius: 1rem;
+    }
+
+    .journey_title {
+        font-size: 1.25rem;
+    }
+
+    .journey_description {
+        font-size: 0.95rem;
+        line-height: 1.3;
+    }
+
+    .journey_card::after {
+        content: "->";
+        position: absolute;
+        font-size: 1.75rem;
+        font-weight: 800;
+        color: var(--yellow-color);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        pointer-events: none;
+    }
+
+    .journey_card.one::after,
+    .journey_card.two::after,
+    .journey_card.three::after,
+    .journey_card.four::after,
+    .journey_card.five::after,
+    .journey_card.six::after,
+    .journey_card.seven::after,
+    .journey_card.eight::after,
+    .journey_card.nine::after,
+    .journey_card.ten::after {
+        content: "->";
+        top: auto;
+        right: auto;
+        left: 50%;
+        bottom: -3.5rem;
+        transform: translateX(-50%) rotate(90deg);
+    }
+
+    .journey_card.eleven::after {
+        content: none;
+    }
+
+    .return_btn {
+        width: 100%;
+        max-width: 280px;
+        justify-content: center;
+        font-size: 1rem;
+        padding: 0.75rem 0;
     }
 }
