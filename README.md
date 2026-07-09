@@ -1,21 +1,21 @@
 # Portfolio - Astrid Rosal
 
-A responsive personal portfolio website built with HTML and CSS.
+My personal developer portfolio that documents my path from a self-directed roadmap to two Flask applications, built before starting my BSIT program.
 
 ## Tech Stack
 - HTML
 - CSS
 
 ## Sections
-- Hero, About, Skills, Projects, Contact
+- **About** - Contains my background and contact
+- **Projects** - Showcases my two Flask Projects, Orchid (Finance Tracker deployed on PythonAnywhere) and Pando (Study Session Tracker)
+- **Journey** - Highlights of the technical progression I have executed before College
 
 ## How to Run
 - Clone this repository
 - Open 'portfolioindex.html' in your browser
 
 ## Preview
-![Home Section](Home_Section.jpg)
-![About Section](About_Section.jpg)
-![Skills Section](Skills_Section.jpg)
-![Projects_Section](Projects_Section.jpg)
-![Contact_Section](Contact_Section.jpg)
+![About Section](portfolio_main_page.jpg)
+![Projects Section](portfolio_projects_page.jpg)
+![Journey Section](portfolio_journey_page.jpg)
