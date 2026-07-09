@@ -16,6 +16,6 @@ My personal developer portfolio that documents my path from a self-directed road
 - Open 'portfolioindex.html' in your browser
 
 ## Preview
-![About Section](portfolio_main_page.jpg)
-![Projects Section](portfolio_projects_page.jpg)
-![Journey Section](portfolio_journey_page.jpg)
+![About Section](static/portfolio_main_page.jpg)
+![Projects Section](static/portfolio_projects_page.jpg)
+![Journey Section](static/portfolio_journey_page.jpg)
